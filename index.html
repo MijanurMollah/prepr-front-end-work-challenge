@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div>
+        <div class="opener">
+            <div class="explore">
+                EXPLORE
+            </div>
+            <div class="btn-group">
+                <button class="tablink" onclick="openPage('Challenges',this)">Challenges</button>
+                <button class="tablink" onclick="openPage('Labs',this)">Labs</button>
+                <button class="tablink" id="defaultOpen" onclick="openPage('Projects',this)">Projects</button>
+            </div>
+        </div>
+        <div class="tabcontent" id="Projects">
+            <div class="grid-container">
+                <div>
+                    <img src="https://preprmedialive.s3.ca-central-1.amazonaws.com/uploads/challenge/tmx4zAFyMKbA39JouysPRFqor.jpg" alt="low cost" style="width:400px;height:250px">
+                </div>
+                <div>
+                    <a href="">COVID-19 Challengee - Low-cost monitoring system for COVID-19 patients</a>
+                    <p>Challenge</p>
+                    <p>View more details for your project here ...</p>
+                    <div class="view">
+                            <a href="">View</a>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-container">
+                <div>
+                    <img src="https://preprmedialive.s3.ca-central-1.amazonaws.com/uploads/challenge/kFAKrsgG91TV0ZoQsy3IhWZmI.jpg" alt="Image" style="width:400px;height:250px">
+                </div>
+                <div>
+                    <a href="">COVID-19 Challengee - Point of Care & Home Diagnostic Kit for COVID-19</a>
+                    <p>Challenge</p>
+                    <p>View more details for your project here ...</p>
+                    <div class="view">
+                            <a href="">View</a>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-container">
+                <div>
+                    <img src="https://preprmedialive.s3.ca-central-1.amazonaws.com/uploads/challenge/LGtxjGeIkje2QJm7GPK5s4So4.png" alt="Plastic Tiles" style="width:400px;height:250px">
+                </div>
+                <div>
+                    <a href="">Recycled Plastic Ceiling Tiles</a>
+                    <p>Challenge</p>
+                    <p>View more details for your project here ...</p>
+                    <div class="view">
+                            <a href="">View</a>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-container">
+                <div>
+                    <img src="https://preprmedialive.s3.ca-central-1.amazonaws.com/uploads/challenge/9sOWMH3o90jdBatFXqAlVA3pf.png" alt="Image" style="width:400px;height:250px">
+                </div>
+                <div>
+                    <a href="">Diverting End of Life Vehicle Plastics from Landfills</a>
+                    <p>Challenge</p>
+                    <p>View more details for your project here ...</p>
+                    <div class="view">
+                            <a href="">View</a>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-container">
+                <div>
+                    <img src="https://preprmedialive.s3.ca-central-1.amazonaws.com/uploads/challenge/X594nZSBbXgvICcHUa4s1EjeN.png" alt="Image" style="width:400px;height:250px">
+                </div>
+                <div>
+                    <a href="">Sensing Technology for Monitoring Microplastics in Marine Environments</a>
+                    <p>Challenge</p>
+                    <p>View more details for your project here ...</p>
+                    <div class="view">
+                            <a href="">View</a>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-container">
+                <div>
+                    <img src="https://preprmedialive.s3.ca-central-1.amazonaws.com/uploads/challenge/TAYbhXQ5Nbbc4Zfm2qhrc5QAi.png" alt="Image" style="width:400px;height:250px">
+                </div>
+                <div>
+                    <a href="">E-Waste</a>
+                    <p>Challenge</p>
+                    <p>View more details for your project here ...</p>
+                    <div class="view">
+                            <a href="">View</a>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-container">
+                <div>
+                    <img src="https://preprmedialive.s3.ca-central-1.amazonaws.com/uploads/challenge/u5jflO7eH9zXK99FrOYYv1Fc8.png" alt="Image" style="width:400px;height:250px">
+                </div>
+                <div>
+                    <a href="">Sustainable Alternatives to Plastic Packaging</a>
+                    <p>Challenge</p>
+                    <p>View more details for your project here ...</p>
+                    <div class="view">
+                            <a href="">View</a>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-container">
+                <div>
+                    <img src="https://preprmedialive.s3.ca-central-1.amazonaws.com/uploads/challenge/2OP2IlVjNsYXZ0mGlbzkIERls.png" alt="Image" style="width:400px;height:250px">
+                </div>
+                <div>
+                    <a href="">Textiles and Microfibers</a>
+                    <p>Challenge</p>
+                    <p>View more details for your project here ...</p>
+                    <div class="view">
+                            <a href="">View</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tabcontent" id="Labs">
+            <p>There are supposed to be labs here...</p>
+        </div>
+        <div class="tabcontent" id="Challenges">
+            <p>There are supposed to be challenges here...</p>
+        </div>
+    </div>
+    <script>
+        function openPage(pageName,elmnt) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            document.getElementById(pageName).style.display = "block";
+         }
+         document.getElementById("defaultOpen").click();
+    </script>
+</body>
+</html>

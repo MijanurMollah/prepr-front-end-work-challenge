@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="joinedLab.css">
+</head>
+<body>
+    <div class="opener">
+        MY LABS
+        <div class="btn-group">
+            <button class="button"  onclick="openPage('popular', this)">Popular</button>
+            <button class="button" id="defaultOpen" onclick="openPage('labs', this)">My Labs</button>
+        </div>
+    </div>
+    <div class="content" id="labs">
+        0 Labs
+    </div>
+    <div class="content" id="popular">
+        All the popular lab options belong here
+    </div>    
+    <div class="outro">
+        Explore and join Labs near
+    </div>
+
+    <script>
+        function openPage(pageName,elmnt) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            document.getElementById(pageName).style.display = "block";
+        }
+
+            // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+</body>
+</html>

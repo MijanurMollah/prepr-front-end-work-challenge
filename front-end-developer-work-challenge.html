@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="f-e-d-w-c.css">
+</head>
+<body>
+    <h2>Challenge</h2>
+    <div class="opening">
+        <div>           
+            <img src="https://preprmedialive.s3.ca-central-1.amazonaws.com/uploads/challenge/SOj5KzEt9AdhCwltdRZMVxxKXwIkE98RxqKKFxQ4.jpeg" alt="img" style="width:500px;height:300px;">
+        </div>
+        <div>
+            <p>Front End Developer Work Challenge </p>
+            <p>Apr 09th, 2020 - Apr 12th, 2020</p>
+            <button>Submit</button>
+            <button>Follow</button>
+        </div>
+    </div>
+    <div class="options">
+        <div class="btn-group">
+            <button class="button" onclick="openPage('overview', this)" id="defaultOpen">Overview</button>
+            <button class="button" onclick="openPage('discussion', this)">Discussion</button>
+            <button class="button" onclick="openPage('submissions', this)">Submissions</button>
+            <button class="button" onclick="openPage('members', this)">Members</button>
+        </div>
+    </div>
+    <div class="explanation" id="overview">
+        <h2>General</h2>
+        <p>...</p>
+        <h2>Submission Process</h2>
+        <p>...</p>
+        <h2>Evaluation Criteria</h2>
+        <p>...</p>
+    </div>
+    <div class="explanation" id="discussion">
+        <h2>Discussion</h2>
+        <p>...</p>
+    </div>
+    <div class="explanation" id="submissions">
+        <h2>Submissions</h2>
+        <p>...</p>
+    </div>
+    <div class="explanation" id="members">
+        <h2>Members</h2>
+        <p>...</p>
+    </div>
+    <script>
+        function openPage(pageName,elmnt) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("explanation");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            document.getElementById(pageName).style.display = "block";
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+.opener {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    padding:20px;
+    border-bottom: solid 1px rgb(241, 237, 237);
+    font-size: 30px;
+}
+
+.explore {
+    margin-left: 50px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.view {
+    float:right;
+    margin-right:50px;
+    font-size: 20px;
+}
+
+.btn-group .tablink {
+    border: 1px solid rgb(191, 197, 191);
+    color: black;
+    padding: 7px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    float: right;
+  }
+  
+.btn-group .tablink:hover { 
+    background-color: blanchedalmond;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-gap: 10px;
+    padding: 10px;
+    border-bottom: solid 1px rgb(241, 237, 237);
+  }
+  
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }

@@ -1,0 +1,39 @@
+.opener {
+    display: block;
+    padding: 25px;
+    font-size: 24px; 
+    border-bottom: 1px solid black;
+}
+
+.opener > a {
+    float:right;
+    text-decoration: none;
+}
+
+.btn-group .button {
+    background-color: white;
+    border-bottom: 1px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    float:left;
+    width:50%;
+  }
+
+.button:focus {
+    background-color: azure;
+}
+
+.message {
+  width:100%;
+  padding: 30px;
+  font-size: 28px;
+  text-align: center;
+}
+  

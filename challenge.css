@@ -1,0 +1,65 @@
+.opener {
+    font-size: 30px;
+    display:block;
+    padding: 20px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid black;
+}
+
+.btn-group .button {
+    background-color: #4CAF50; /* Green */
+    border: 1px solid green;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    float: left;
+  }
+
+  .btn-group {
+      padding-top: 10px;
+  }
+
+  .categories {
+      display: block;
+      padding: 10px;     
+      font-size: 18px;
+      border-bottom: 1px solid black;
+  }
+
+  .categories > button {
+    background-color: #4CAF50; /* Green */
+    border: 1px solid green;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    padding: 10px;
+    border-bottom: 1px solid black;
+  }
+  
+  .grid-container > div {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+
+  .grid-container > div > a {
+      text-decoration: none;
+  }
+
+  .grid-container > div > i {
+    padding: 10px;
+}

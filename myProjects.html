@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="myProjects.css">
+</head>
+<body>
+    <div class="opener">
+        Projects
+        <a href=""> + Create Your First Project</a>
+    </div>
+    <div class="btn-group">
+        <button class="button" id="defaultOpen" onclick="openPage('Projects', this)">My Projects</button>
+        <button class="button" onclick="openPage('Invites', this)">Invited Projects</button>
+    </div>
+    <div class="message" id="Projects">
+        There are currently no projects available
+    </div>
+    <div class="message" id="Invites">
+        There are currently no Invited projects available
+    </div>
+    <script>
+        function openPage(pageName,elmnt) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("message");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            document.getElementById(pageName).style.display = "inline-block";
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+</body>
+</html>
